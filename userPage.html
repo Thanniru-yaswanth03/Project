@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Fake News Detection</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- <img src="./Logo.jpg" id="img" alt="" style="width: 50px; height:50px"> -->
+            <a href="index.html" class="logo">Fake News Detection</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#profile">Profile</a>
+                <!-- <a href="#">About us</a> -->
+                <!-- <a href="#">Categories</a> -->
+                <a href="login.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="welcome-section">
+            <div class="welcome-text">
+                <h1>Welcome back, <span id="user-name">Sarah Wilson</span></h1>
+                <p>Track your news verification history and discover trending topics</p>
+            </div>
+            <div class="user-avatar">
+                <!-- <img src="https://via.placeholder.com/150" alt="User Avatar"> -->
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card total-checks">
+                <h3>Total Checks</h3>
+                <p class="stat-number">247</p>
+            </div>
+            <div class="stat-card true-news">
+                <h3>True News</h3>
+                <p class="stat-number">183</p>
+            </div>
+            <div class="stat-card fake-news">
+                <h3>Fake News</h3>
+                <p class="stat-number">64</p>
+            </div>
+            <div class="stat-card saved-articles">
+                <h3>Saved Articles</h3>
+                <p class="stat-number">12</p>
+            </div>
+        </div>
+
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="social">Social Media</button>
+            <button class="tab-btn" data-category="tech">Technology</button>
+            <button class="tab-btn" data-category="politics">Politics</button>
+            <button class="tab-btn" data-category="sports">Sports</button>
+            <button class="tab-btn" data-category="entertainment">Entertainment</button>
+        </div>
+
+        <section class="recent-checks">
+            <h2>Your Recent Checks</h2>
+
+            <div class="check-item verified">
+                <div class="check-status">
+                    <span class="status-icon">✓</span>
+                    <span class="status-text">Verified True</span>
+                </div>
+                <div class="check-content">
+                    <h3>SpaceX Successfully Launches New Satellite Constellation</h3>
+                    <p>The aerospace company has expanded its satellite network with the latest successful launch...</p>
+                </div>
+                <div class="check-date">March 8, 2023</div>
+            </div>
+
+            <div class="check-item fake">
+                <div class="check-status">
+                    <span class="status-icon">✗</span>
+                    <span class="status-text">Fake News</span>
+                </div>
+                <div class="check-content">
+                    <h3>Major Tech Company Claims Revolutionary AI Breakthrough</h3>
+                    <p>Investigation reveals exaggerated claims about AI capabilities in recent press release...</p>
+                </div>
+                <div class="check-date">March 7, 2023</div>
+            </div>
+
+            <div class="check-item partial">
+                <div class="check-status">
+                    <span class="status-icon">!</span>
+                    <span class="status-text">Partially True</span>
+                </div>
+                <div class="check-content">
+                    <h3>New Study Links Popular Diet to Health Benefits</h3>
+                    <p>While some benefits are supported by research, others require further investigation...</p>
+                </div>
+                <div class="check-date">March 7, 2023</div>
+            </div>
+        </section>
+
+        <div class="dashboard-grid">
+            <section class="trending-topics">
+                <h2>Trending Topics</h2>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-number">01</div>
+                        <div class="topic-content">
+                            <h3>Global Climate Summit 2025</h3>
+                            <p>2,145 fact checks this week</p>
+                        </div>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-number">02</div>
+                        <div class="topic-content">
+                            <h3>Quantum Computing Breakthrough</h3>
+                            <p>1,873 fact checks this week</p>
+                        </div>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-number">03</div>
+                        <div class="topic-content">
+                            <h3>World Cup Qualifiers</h3>
+                            <p>1,654 fact checks this week</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="latest-verified">
+                <h2>Latest Verified News</h2>
+                <div class="verified-list">
+                    <div class="verified-item">
+                        <div class="verified-image">
+                            <img src="https://via.placeholder.com/100x80" alt="Conference">
+                        </div>
+                        <div class="verified-content">
+                            <h3>Global Tech Conference Announces Keynote Speakers</h3>
+                            <p>Leading industry experts to discuss AI and sustainability...</p>
+                            <span class="verified-time">1 hour ago</span>
+                        </div>
+                    </div>
+                    <div class="verified-item">
+                        <div class="verified-image">
+                            <img src="https://via.placeholder.com/100x80" alt="Medical Research">
+                        </div>
+                        <div class="verified-content">
+                            <h3>Breakthrough in Medical Research</h3>
+                            <p>Scientists develop new treatment method for rare diseases...</p>
+                            <span class="verified-time">2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
